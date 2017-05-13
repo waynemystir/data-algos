@@ -9,7 +9,8 @@ LIBS=-pthread
 SOURCES=two_sum.c \
 		valid_palindrome.c \
 		strstr.c \
-		reverse_words.c
+		reverse_words.c \
+		reverse_words_in_place.c
 
 OBJECTS=$(SOURCES:.c=.o)
 

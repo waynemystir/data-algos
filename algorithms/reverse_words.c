@@ -6,8 +6,8 @@ char*
 reverse_words(char *str) {
 
 	unsigned long last_word_break = strlen(str);
-	char *reversed_word = malloc(strlen(str));
-	memset(reversed_word, '\0', strlen(str));
+	char *reversed_word = malloc(strlen(str) + 1);
+	memset(reversed_word, '\0', strlen(str) + 1);
 
 	for (int i = strlen(str) - 1; i >= 0; i--) {
 		if (i == 0 || str[i - 1] == ' ') {
