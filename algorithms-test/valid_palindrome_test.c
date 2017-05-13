@@ -19,6 +19,7 @@ char test_strs[][TEST_STR_MAX_LEN] = {
 	"kaya k",
 	"Rats live on no evil star",
 	"abcdefgfdcba",
+	"Z",
 	"Live on time, emit no evil"
 };
 

@@ -6,9 +6,7 @@
 
 bool
 is_valid_palindrome(char *str) {
-	size_t len = strlen(str);
-	if (len == 0) return true;
-	int i = 0, j = len - 1;
+	int i = 0, j = strlen(str) - 1;
 
 	while (i < j) {
 		char lc = str[i];
