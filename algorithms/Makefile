@@ -7,7 +7,9 @@ ARFLAGS=rcs
 LIBS=-pthread
 
 SOURCES=two_sum.c \
-		valid_palindrome.c
+		valid_palindrome.c \
+		strstr.c \
+		reverse_words.c
 
 OBJECTS=$(SOURCES:.c=.o)
 

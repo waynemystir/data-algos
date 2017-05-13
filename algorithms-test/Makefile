@@ -7,7 +7,9 @@ LIBS=-pthread -lalgos
 
 THE_SOURCES=main.c \
 		two_sum_test.c \
-		valid_palindrome_test.c
+		valid_palindrome_test.c \
+		strstr_test.c \
+		reverse_words_test.c
 
 THE_EXECUTABLE=test_algorithms
 

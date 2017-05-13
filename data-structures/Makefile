@@ -5,7 +5,8 @@ CFLAGS=-c -Wall
 AR=ar
 ARFLAGS=rcs
 
-SOURCES=hashmap.c
+SOURCES=hashmap.c \
+	linkedlist.c
 
 OBJECTS=$(SOURCES:.c=.o)
 
