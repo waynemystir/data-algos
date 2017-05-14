@@ -3,14 +3,15 @@ BUILD_DIR=../build
 CC=gcc
 CFLAGS=-c -Wall -I../data-structures -I../algorithms
 LDFLAGS=-Wall -I../data-structures -I../algorithms -L$(BUILD_DIR)
-LIBS=-pthread -lalgos
+LIBS=-pthread -lalgos -lm
 
 THE_SOURCES=main.c \
 		two_sum_test.c \
 		valid_palindrome_test.c \
 		strstr_test.c \
 		reverse_words_test.c \
-		reverse_words_in_place_test.c
+		reverse_words_in_place_test.c \
+		atoi_test.c
 
 THE_EXECUTABLE=test_algorithms
 

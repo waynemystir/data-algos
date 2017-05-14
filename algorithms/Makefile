@@ -4,13 +4,14 @@ CC=gcc
 CFLAGS=-c -Wall -I../data-structures
 AR=ar
 ARFLAGS=rcs
-LIBS=-pthread
+LIBS=-pthread -lm
 
 SOURCES=two_sum.c \
 		valid_palindrome.c \
 		strstr.c \
 		reverse_words.c \
-		reverse_words_in_place.c
+		reverse_words_in_place.c \
+		atoi.c
 
 OBJECTS=$(SOURCES:.c=.o)
 
@@ -37,7 +38,7 @@ $(STATIC_LIB): dependencies $(OBJECTS)
 	$(AR) $(ARFLAGS) $(BUILD_DIR)/$@ $(foreach dir, $(BUILD_DIR), $(call get_objs,$(dir)))
 
 %.o : %.c
-	$(CC) $(CFLAGS) $< -o $(BUILD_DIR)/$@
+	$(CC) $(CFLAGS) $< -o $(BUILD_DIR)/$@  $(LIBS)
 
 .PHONY: dependencies $(DEPENDENCIES)
 

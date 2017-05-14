@@ -5,6 +5,7 @@
 #include "strstr_test.h"
 #include "reverse_words_test.h"
 #include "reverse_words_in_place_test.h"
+#include "atoi_test.h"
 
 int main() {
 	printf("main-0\n");
@@ -13,5 +14,6 @@ int main() {
 	test_needle_in_haystack();
 	test_reverse_words();
 	test_reverse_words_in_place();
+	test_atoi();
 	return 0;
 }

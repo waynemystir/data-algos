@@ -1,0 +1,1 @@
+void watoi(char *, int *);
